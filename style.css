@@ -1,0 +1,29 @@
+/* ---------- style.css ---------- */
+:root{
+  --bg:#07070b;
+  --panel:#0f1116;
+  --muted:#cbd5e1;
+  --accent:#00b3ff;
+  --accent2:#9b5cff;
+  --radius:10px;
+  --maxw:1100px;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+}
+html,body{margin:0;background:linear-gradient(180deg,var(--bg),#0b0b12);color:var(--muted);}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:28px;}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 0;}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 8px 30px rgba(0,0,0,0.7)}
+nav a{color:var(--muted);margin-left:16px;text-decoration:none;font-weight:600;font-size:0.95rem}
+nav a:hover{color:var(--accent)}
+section{padding:28px 0;border-top:1px solid rgba(255,255,255,0.03)}
+h2{color:var(--accent2);margin:0 0 12px 0}
+h3,h4{color:var(--accent);margin:0 0 8px 0}
+p{margin:0 0 12px 0;color:var(--muted)}
+ul{margin:8px 0 0 18px;color:var(--muted)}
+li{margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--panel);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.btn{background:var(--accent);color:#021022;padding:10px 14px;border-radius:10px;border:none;font-weight:700;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.05)}
+footer{padding:26px 0;color:#9aa6b3;font-size:0.9rem;text-align:center;border-top:1px solid rgba(255,255,255,0.02)}
